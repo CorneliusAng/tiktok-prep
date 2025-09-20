@@ -1,0 +1,14 @@
+{
+  "name": "js-katas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "watch": "nodemon --watch src --watch test --exec node --test",
+    "dev": "node src/scratch.mjs"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.7"
+  }
+}

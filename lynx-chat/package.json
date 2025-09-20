@@ -1,0 +1,23 @@
+{
+  "name": "lynx-chat",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "npm --prefix server install",
+    "dev": "concurrently -k -n web,server -c auto,auto \"vite\" \"npm run dev:server\"",
+    "build": "vite build",
+    "preview": "vite preview --strictPort --port 5174",
+    "dev:server": "npm --prefix server run dev",
+    "start:server": "npm --prefix server run start"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.2",
+    "concurrently": "9.0.1",
+    "vite": "^5.4.20"
+  }
+}

@@ -1,0 +1,25 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build artifacts
+dist/
+build/
+.vite/
+.cache/
+
+# Env files
+.env
+.env.*
+!.env.example
+!/lynx-chat/.env.example
+
+# OS
+.DS_Store
+
+# Vercel local
+.vercel/
+
